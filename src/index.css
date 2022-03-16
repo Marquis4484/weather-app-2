@@ -1,0 +1,114 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: skyblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+    width:100%;
+    height: 100wh;
+    position: relative;
+    background-color: aqua;
+    
+}
+
+.container{
+  max-width: 700px;
+  height: 700px;
+  margin:auto;
+  padding: 0.1 rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+ .description{
+  
+  transform-origin: 0 0;
+  text-align: center;
+  
+}
+
+ .bottom{
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: 12px ;
+   
+
+
+}
+
+.bold{
+  font-weight: 700;
+}
+
+ .search {
+  text-align: center;
+  padding: 1rem;
+ 
+}
+
+input {
+  padding: .2rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+}
+
+nav {
+  text-align: center;
+  background-color: skyblue;
+  font-family: Arial;
+  font-size: 35px;
+  padding: 20px;
+}
+
+.temp{
+  text-align: center;
+}
+
+.location{
+  text-align: center;
+}
+
+.upper{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}

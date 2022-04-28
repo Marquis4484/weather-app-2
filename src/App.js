@@ -1,18 +1,19 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState} from 'react'
+
+
 import axios from 'axios'
 
 
 function App() {
 
   const [data,setData] = useState({}) //
-  const[location,setLocation] = useState('')
+  const [location,setLocation] = useState('')
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=8369e6d431e66dc0a9a920872a693b5c`
+  console.log(process.env)
+
+
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${process.env.REACT_APP_API_KEY}`
   
-  useEffect(() => {
-    document.title = "Weather App";  
-  }, []);
- 
   const searchLocation = (e) => {
     if(e.key === 'Enter') {
       axios.get(url).then((response) => {

@@ -9,4 +9,7 @@ Axios is used in this project to fetch url data.
 
 ## Run My Project
 
+<<<<<<< HEAD
 You can run this little project here: https://marquis4484.github.io/weather-app-2/
+=======
+
